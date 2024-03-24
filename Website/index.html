@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<style>
+		body {
+			background-color: #000000f0;
+			font-family: 'Arial';
+		}
+		.login {
+			width: 382px;
+			overflow: hidden;
+			margin: 20px auto;
+			padding: 80px;
+			background-color: #7d62f7;
+			border-radius: 15px;
+		}
+		h2 {
+			text-align: center;
+			color: #ffffff;
+			padding: 20px;
+		}
+		label {
+			color: #ffffff;
+			font-size: 17px;
+			margin-bottom: 10px;
+		}
+		#Uname, #Pass {
+			width: 300px;
+			height: 30px;
+			border: none;
+			border-radius: 3px;
+			padding-left: 8px;
+			margin-bottom: 20px;
+		}
+		#log {
+			width: 300px;
+			height: 30px;
+			border: none;
+			border-radius: 17px;
+			padding-left: 7px;
+			color: blue;
+			margin-bottom: 20px;
+		}
+		span {
+			color: white;
+			font-size: 17px;
+			display: block;
+			margin-top: 20px;
+			
+		}
+		a {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="login">
+		<form id="login" method="get" action="homepage.html">
+			<h2>Login Page</h2>
+			<hr>
+			<label>Username:</label>
+			<input type="text" name="Uname" id="Uname" placeholder="Enter your username"><br>
+			<label>Password:</label>
+			<input type="password" name="Pass" id="Pass" placeholder="Enter your password"><br>
+			<input type="submit" name="log" id="log" value="Login">
+			<span>Don't have an account? <a href="signup.php">Signup</a></span>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <style>
+		body {
+			background-color: #000000f0;
+			margin: 0;
+			padding: 0;
+			font-family: 'Arial';
+		}
+		header {
+			background-color: #7d62f7;
+			box-shadow: 0 1px 3px #000000f0;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+			padding: 10px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 70px;
+		}
+		.logo {
+			font-size: 2rem;
+			font-weight: bold;
+			color: #ffffff;
+			margin-left: 30px;
+		}
+		.search {
+			background-color: #f2f2f2;
+			border: 1px solid #ddd;
+			border-radius: 3px;
+			padding: 5px;
+			display: flex;
+			align-items: center;
+			margin-right: 30px;
+			width: 50%;
+		}
+		.search input[type="text"] {
+			background-color: #f2f2f2;
+			border: none;
+			padding: 5px;
+			width: 100%;
+		}
+		.search button[type="submit"] {
+	        background-color: #cecece;
+			border: none;
+			color: #242424;
+			padding: 5px 10px;
+			border-radius: 3px;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+        .settings {
+            padding-right: 10px;
+        }
+        .btn {
+            background-color: #ae9dfb;
+            border: none;
+            color: #000000f0;
+            padding: 7px 7px;
+            margin-left: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .card {
+            background-color: #212121f0;
+            border: none;
+            color: #fffffff0;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        .card:first-child {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			 Movie Recommender
+		</div>
+		<div class="search">
+			<input type="text" placeholder="Search...">
+			<button type="submit">Go</button>
+		</div>
+		<div class="settings">
+            <button class="btn"><i class="fas fa-heart fa-black"></i></button>
+			<button class="btn"><i class="fas fa-user fa-black"></i></button>
+            <button class="btn"><i class="fas fa-cog fa-black"></i></button>
+		</div>
+	</header>
+	<div class="content">
+		<div class="card">
+			<h2>Most Viewed</h2>
+			<p>the most watched movies of all time</p>
+		</div>
+		<div class="card">
+			<h2>Top 250</h2>
+			<p>the best movies in our database</p>
+		</div>
+	</div>
+</body>
+</html>
